@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+    <script src="lib/ngCordova/dist/ng-cordova.min.js"> </script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter" class="platform-android platform-cordova platform-webview">
+
+    <ion-pane>
+      <ion-header-bar class="bar-dark">
+        <h1 class="title"><i class="ion-ios-cloud-upload"></i> &nbsp;CCloud Storage Services</h1>
+      </ion-header-bar>
+      
+      
+      <ion-content scroll="true" ng-controller="cloudCtrl">
+            <div class="list">
+
+                <a class="item item-thumbnail-left" ng-click="onedrive()">
+                  <img style="border:1px solid lightgray;" src="img/onedrive.png">
+                  <h2>Microsoft OneDrive</h2>
+                  <p>Link: https://onedrive.live.com</p>
+                </a>
+
+                <a class="item item-thumbnail-left" ng-click="gdrive()">
+                  <img style="border:1px solid lightgray;" src="img/google.ico">
+                  <h2>Google Drive</h2>
+                  <p>Link: https://drive.google.com/</p>
+                </a>
+                
+                
+                
+                <a class="item item-thumbnail-left" ng-click="dropbox()">
+                  <img style="border:1px solid lightgray;" src="img/drop.png">
+                  <h2>Dropbox</h2>
+                  <p>Link: https://www.dropbox.com/</p>
+                </a>
+              
+              
+                
+                <a class="item item-thumbnail-left" ng-click="fourshared()">
+                  <img style="border:1px solid lightgray;" src="img/4shared.png">
+                  <h2>4Shared</h2>
+                  <p>Link: http://www.4shared.com/</p>
+                </a>
+              
+              
+                <a class="item item-thumbnail-left" ng-click="mediafire()">
+                  <img style="border:1px solid lightgray;" src="img/mediafire.PNG">
+                  <h2>Mediafire</h2>
+                  <p>Link: https://www.mediafire.com/</p>
+                </a>
+                
+                
+                <a class="item item-thumbnail-left" ng-click="spideroak()">
+                  <img style="border:1px solid lightgray;" src="img/spider.png">
+                  <h2>Spideoak</h2>
+                  <p>Link: https://spideroak.com/</p>
+                </a>
+              
+              
+
+            </div>
+      </ion-content>
+      
+      <ion-footer-bar class="bar-dark">
+          <div class="title" style="font-size: 10px;text-align:center;">Chael@Mitchgutierrez &copy; All Rights Reserved</div>  
+      </ion-footer-bar>
+    </ion-pane>
+  </body>
+</html>
